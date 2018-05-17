@@ -1,0 +1,7 @@
+<div class="container" [style.transform]="translate">
+  <div class="row" *ngFor="let row of view" [style.height.px]="row.height">
+    <div *ngFor="let cell of row.elements.range(left, right)">{{cell.text}}</div>
+  </div>
+</div>
+<div [style.height.px]="scrollerHeight" style="float:right;"></div>
+<div [style.width.px]="scrollerWidth" style="height: 1px;"></div>

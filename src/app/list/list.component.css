@@ -1,0 +1,36 @@
+:host {
+    border: 1px solid lightgrey;
+    min-width: 500px;
+    display: block;
+    overflow: scroll;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+.row>div {
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    flex: 1 0 100px;
+}
+
+.row>div:last-child {
+    border-right: 0px;
+}
+
+.row:last-child>div {
+    border-bottom: 0px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
